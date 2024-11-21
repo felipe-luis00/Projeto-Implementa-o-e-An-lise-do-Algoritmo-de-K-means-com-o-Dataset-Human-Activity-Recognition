@@ -1,2 +1,1 @@
-# Relatorio_Tecnico_kNN_Instagram.pdf
-Relatorio_Tecnico_kNN_Instagram.pdf
+#Projeto: Implementação e Análise do Algoritmo de K-means com o Dataset Human Activity Recognition
