@@ -1,12 +1,26 @@
-#Projeto: Implementação e Análise do Algoritmo de K-means com o Dataset Human Activity Recognition
-Nome:Luis Felipe Alves de Moura
+Implementação e Análise do Algoritmo de K-means com o Dataset Human Activity Recognition
 
-Explicação:
+Nome: Luis Felipe Alves de Moura
 
-Carregamento dos Dados: Carrega os dados de treinamento (features e rótulos) em dataframes Pandas.
-Normalização: Normaliza os dados utilizando o StandardScaler para garantir que todas as features tenham a mesma escala.
-Método do Cotovelo: Calcula a soma dos quadrados das distâncias intra-cluster (WCSS) para diferentes valores de K e plota o gráfico para identificar o ponto de inflexão (cotovelo).
-Criação do Modelo K-means: Cria um modelo K-means com o número de clusters escolhido.
-Ajuste do Modelo: Ajusta o modelo aos dados normalizados.
-Avaliação: Calcula o silhouette score para avaliar a qualidade dos clusters.
-Visualização: Utiliza PCA para reduzir a dimensionalidade dos dados para 2D e plota os clusters em um gráfico de dispersão.
+
+Explicação do Código:
+Carregamento dos Dados:
+
+As características e rótulos são carregados diretamente dos arquivos no formato fornecido.
+Normalização:
+
+As características são normalizadas com StandardScaler para garantir escalas uniformes.
+Redução de Dimensionalidade:
+
+O PCA reduz a dimensionalidade para 2 componentes, tornando a visualização possível.
+Método do Cotovelo e Silhouette Score:
+
+O método do cotovelo determina o K ideal com base na inércia.
+O Silhouette Score avalia a qualidade dos clusters.
+Agrupamento com K-means:
+
+O K-means++ é usado para inicialização eficiente.
+O número de clusters ideal é escolhido com base nos gráficos.
+Visualização:
+
+Os clusters são representados em 2D com as componentes principais do PCA.
